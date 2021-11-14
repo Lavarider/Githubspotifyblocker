@@ -10,7 +10,7 @@ while True:
     GetWindowTextLength = ctypes.windll.user32.GetWindowTextLengthW
     IsWindowVisible = ctypes.windll.user32.IsWindowVisible
     ####### Modules to gather data
-    time.sleep(5)      #Sleep between checks (in seconds)
+    time.sleep(.5)      #Sleep between checks (in seconds)
     titles = [] #Empty list for titles (As String Objects)
     def foreach_window(hwnd, lParam):
         if IsWindowVisible(hwnd):
